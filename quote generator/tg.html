@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { animation: colorchange 6s linear infinite;}
+         @keyframes colorchange
+         {
+           0%   {background: orchid; color: black;}
+           33%  {background: mediumslateblue; color: black;}
+           66%  {background: mediumorchid; color: black;}
+           100% {background: tomato; color: black;}
+        }    
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+</head>
+<body><center>
+<font color="gold" size="5" face="Arial">
+<marquee direction = "right" width="60%" height="100px"><h1>Tipsy Corner</h1></marquee>
+<b>
+<div id="quoteDisplay"></div>
+<button type="button" class="btn btn-warning" onclick="newQuote()"><b>New Tip</b></button>
+<script src="javascript.js"></script>
+</b>
+</font>
+</center>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app"/> 
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<title>React App</title>
+<style>
+       body{ animation: colorchange 6s linear infinite;}
+         @keyframes colorchange
+         {
+           0%   {background: orchid; color: black;}
+           33%  {background: mediumslateblue; color: black;}
+           66%  {background: mediumorchid; color: black;}
+           100% {background: tomato; color: black;}
+        } 
+     section {
+       width: 33vw;
+       margin: 0 auto;
+     }
+     #message {
+       text-align: center;
+       /*
+       color: inherit;
+       mix-blend-mode: difference;
+       */
+       opacity: 100%;
+       font-family: Black, Helvetica, Arial;
+     }
+     
+     .button {
+       border: none;
+       color: black;
+       padding: 0px 0px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       margin: 2px 2px;
+       cursor: pointer;
+     
+       border-radius: 50px ;
+       height: 0px;
+       line-height: 80px;
+       width: 80px;  
+       font-size: 3em ;
+     }
+     
+     .button1 {background-color: #128516; } /* Happy */
+     .button2 {background-color: #128512; } /* Smile */
+     .button3 {background-color: #128533; } /* Meh */
+     .button4 {background-color: #128543; } /* Sad */
+     .button5 {background-color: #128532; } /* Cry */
+     
+p.groove {border-style: groove;}
+
+.vl {
+  border-left: 6px groove palevioletred;
+  height: 890px;
+  position: absolute;
+  left: 80%;
+  margin-left: -3px;
+  top: 0;
+}
+
+
+
+</style>
+</head>
+
+<!--<frameset cols = "75%,25%">
+<frame name = "main" src = "G:\React-Projects\my-fettle\public\index.html" />
+<frame name = "tips" src = "C:\Users\hp4e\Desktop\tip gen\tp.html" />
+<div style = "position:relative; left:10px; top:20px;">
+
+-->
+
+<body>
+<div id="root"></div>
+<div class="vl"></div>
+<section id="message">
+<font color = "gold" size="5" face="Arial">
+<strong>
+<p style="text-align: center;
+          border:8px;
+          border-style: groove;
+          border-color: sandybrown; 
+          height: 8em; width: 24em;
+          padding: 0.3em;"
+          >                  
+Choose an emoji that reflects your current emotion
+<br><br>
+<button class="button button1" onclick="document.location='https://wynk.in/music/playlist/happy-tunes-tamil/bb_1589956293959'">&#128516;</button>
+&nbsp;
+<button class="button button2" onclick="document.location='https://wynk.in/music/playlist/dance-top-50/bb_1447842382071'">&#128512;</button>
+&nbsp;
+<button class="button button3" onclick="document.location='https://wynk.in/music/playlist/sing-along-with-lyrics-tamil/bb_1559632403867'">&#128533;</button>
+&nbsp;
+<button class="button button4" onclick="document.location='https://wynk.in/music/playlist/nostalgic-tunes-tamil/bb_1589957277574'">&#128543;</button>
+&nbsp;
+<button class="button button5" onclick="document.location='https://wynk.in/music/playlist/the-maestro-ilayaraja/bb_1464764265025'">&#128532;</button>
+</p>
+</strong>
+</font>
+</section>  
+</body>
+</html>
